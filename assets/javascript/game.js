@@ -18,6 +18,11 @@ var losses = 0;
    document.getElementById("wordChosen").innerHTML = spaceholder.join(''); 
 
 function reset() {
+
+// setTimeout(function() {
+  //your code to be executed after 1 second
+
+
   guessesLeft = 9;
   guesses = [];
   chosenWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
@@ -104,6 +109,7 @@ console.log("wins: " + wins);
 
 if (wincounter == spaceholder.length) {
   wins++;
+
   reset();
 };
 
@@ -114,7 +120,11 @@ if (wincounter == spaceholder.length) {
 
 }
 else began = true;
+
+// }, delayMillis);
 }; 
+
+
 
 
 

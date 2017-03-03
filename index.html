@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
   	<title>Hangman</title>
-	<!-- <script type="text/javascript" src="assets/javascript/game.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
   	
 </head>
 
@@ -15,7 +15,17 @@
 
 	<div id="gameArea">
 
-		<h1> Hangman </h1>
+		<img class="swingimage" src="monkey2.png" />
+		
+
+		<header id=header>
+
+			<h1> Hangman </h1>
+
+		</header>
+		<div id="game">
+
+		
 
 		<p> Press any key to get started. </p>
 
@@ -25,11 +35,18 @@
 
 		<p> Guesses Left: <span id="guessesLeft">9</span> </p>
 
-		<p> Your Guesses So Far: <span id="guessesMade"></span> </p>
+		<p> Your Guesses So Far: <br/><span id="guessesMade"></span> </p>
 
-		<p id="wordChosen"></p>
+		</div>
+
+		<div id="word">
+		<p id="wordChosen" id="wordbox"></p>
+		</div>
+
 
 	</div>
+
+
 
 <!-- <footer>
 	<p>Copyright &copy; 2017 Maria Wong</p>
