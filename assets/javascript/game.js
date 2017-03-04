@@ -1,5 +1,5 @@
 
-var wordOptions = ["dog", "goat", "horse"];
+var wordOptions = ["horse", "gorilla"];
 var wins = 0;
 var losses = 0;
 

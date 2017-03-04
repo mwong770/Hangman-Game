@@ -4,46 +4,51 @@
 
 <head>
   	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
   	<title>Hangman</title>
+  	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
   	
 </head>
 
 <body>
 
-	<div id="gameArea">
+	<div id="gameArea" clas="container">
+		<!-- <div class="row"> -->
+			<!-- <div class="col-xs-12"> -->
 
-		<img class="swingimage" src="monkey2.png" />
+		<img id="monkey" class="swingimage" src="monkey2.png" />
 		
 
 		<header id=header>
 
 			<h1> Hangman </h1>
+			<h3>Can you guess <br/> which animal I'm thinking of?</h3>
 
 		</header>
 		<div id="game">
 
-		
+			<p> Press any key to get started. </p>
 
-		<p> Press any key to get started. </p>
+			<p> Wins: <span id="wins">0</span> </p>
 
-		<p> Wins: <span id="wins">0</span> </p>
+			<p> Losses: <span id="losses">0</span> </p>
 
-		<p> Losses: <span id="losses">0</span> </p>
+			<p> Guesses Left: <span id="guessesLeft">9</span> </p>
 
-		<p> Guesses Left: <span id="guessesLeft">9</span> </p>
-
-		<p> Your Guesses So Far: <br/><span id="guessesMade"></span> </p>
+			<p> Your Guesses So Far: <br/></p>
+			<p id="guessesMade"></p>
 
 		</div>
 
-		<div id="word">
-		<p id="wordChosen" id="wordbox"></p>
+		<div id="stone">
+			<p id="wordChosen"></p>
 		</div>
 
-
+<!-- </div></div> -->
 	</div>
 
 
