@@ -1,64 +1,71 @@
+
 <!DOCTYPE html>
 
 <html lang="en-us">
 
 <head>
+
   	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
   	<title>Hangman</title>
-  	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+  	
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
   	
 </head>
 
 <body>
+	
+	<!--less variation in movement when making responsive if put swingMonkey here -->
+	<img id="swingMonkey" src="assets/images/swingmonkey.png"/>
 
-	<div id="gameArea" clas="container">
-		<!-- <div class="row"> -->
-			<!-- <div class="col-xs-12"> -->
+	<header id=header>
 
-		<img id="monkey" class="swingimage" src="monkey2.png" />
-		
+		<h1> Hangman </h1>
 
-		<header id=header>
+		<h3>Can you guess <br/> all 20 animals I'm thinking of?</h3>
+	
+	</header>
 
-			<h1> Hangman </h1>
-			<h3>Can you guess <br/> which animal I'm thinking of?</h3>
+	<div id="scoreBoard">
 
-		</header>
-		<div id="game">
+		<div> Press any key to get started. </div>
 
-			<p> Press any key to get started. </p>
+		<div> Wins: <span id="wins">0</span> </div>
 
-			<p> Wins: <span id="wins">0</span> </p>
+		<div> Losses: <span id="losses">0</span> </div>
 
-			<p> Losses: <span id="losses">0</span> </p>
+		<div> Guesses Left: <span id="guessesLeft">9</span> </div>
 
-			<p> Guesses Left: <span id="guessesLeft">9</span> </p>
+		<div> Your Guesses So Far: <br/></div>
 
-			<p> Your Guesses So Far: <br/></p>
-			<p id="guessesMade"></p>
+		<div id="guessesMade"></div>
 
-		</div>
-
-		<div id="stone">
-			<p id="wordChosen"></p>
-		</div>
-
-<!-- </div></div> -->
 	</div>
+		
+	<img id="midMonkey" src="assets/images/midmonkey.png"/>
 
+	<img id="groundMonkey" src="assets/images/groundmonkey.png"/>
 
+	<audio src="assets/backgroundmusic.mp3" id="backgroundMusic"> Audio player not available </audio>
 
-<!-- <footer>
-	<p>Copyright &copy; 2017 Maria Wong</p>
-</footer> -->
+	<img id="greatJob" src="assets/images/greatjob.gif"/>
 
-<!--why doesn't work if in head?-->
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<button id="replayButton" onclick="reload()" type="button"> Play Again! </button> 
+
+	<div id="snackbar"> </div>
+
+	<div id="stone"> <p id="wordChosen"> </p> </div>
+		
+	<footer>
+
+		<p>Copyright <br/> &copy; 2017 Maria Wong</p>
+
+	</footer>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 
