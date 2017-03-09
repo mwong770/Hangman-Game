@@ -6,9 +6,9 @@ var wins = 0;
 var losses = 0;
 var guessesLeft = 9;
 var guesses = [];
-var chosenWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
-var splitWord = chosenWord.split("");
-var spaceholder = new Array();
+var chosenWord = '';
+var splitWord = '';
+var spaceholder = [];
 
 reset();
 
@@ -103,9 +103,6 @@ document.onkeyup = function(event) {
     		        spaceholder[i] = userGuess;
     		        document.getElementById("wordChosen").innerHTML = spaceholder.join(' ');
     	     }
-
-            if (spaceholder == splitWord) {
-            }
 
         }
 
