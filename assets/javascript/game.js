@@ -85,7 +85,7 @@ document.onkeyup = function(event) {
 		            //If the letter already entered, let user know
 		            if (isInArray(userGuess.toUpperCase(), guesses)) {
                         toast("You have already entered this letter!");
-                        setTimeout('clearToast()', 1500);
+                        setTimeout(clearToast, 1500);
 
                     //if letter not already entered, add it to the guesses array and subtract 1 from guessesLeft
 		            } else {
@@ -95,7 +95,7 @@ document.onkeyup = function(event) {
             //if the key pressed is not a letter, toast to press a letter
             }   else {
     		            toast("Please enter a letter.");
-                        setTimeout('clearToast()', 1500);
+                        setTimeout(clearToast, 1500);
     	        }
 
         for (var i = 0; i < splitWord.length; i++) {
@@ -110,8 +110,8 @@ document.onkeyup = function(event) {
             losses++;
 
             showMidMonkey();          
-            setTimeout('showGroundMonkey()', 100);
-            setTimeout('reset()', 800);
+            setTimeout(showGroundMonkey, 100);
+            setTimeout(reset, 800);
 
         } //ends if guessesLeft === 0 
 
@@ -133,7 +133,7 @@ document.onkeyup = function(event) {
                 }
 
                 if (wordOptions.length > 0) {
-                        setTimeout('reset()', 1200);
+                        setTimeout(reset, 1200);
                 }
 
                 console.log("after win " + wordOptions.length);
