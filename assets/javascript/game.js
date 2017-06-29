@@ -116,7 +116,6 @@ document.onkeyup = function(event) {
             // prevents unintentional losses if the user clicks key really fast 
             guessesLeft = "";
             losses++;
-
             showMidMonkey();          
             setTimeout(showGroundMonkey, 100);
             setTimeout(reset, 800);
